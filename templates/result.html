@@ -1,0 +1,52 @@
+{% extends "themepage.html" %}
+{% block title %} Result {% endblock %} 
+
+
+{% block body %}
+<div class="bgimg-1">
+    <div class="container" style="margin-top:4em">
+        <div class="row">
+            <div class="col-sm-12">
+
+                    <div>
+                      <h4 class="card-title" style="color: white">Here are the imagse along with the predictions</h4>
+                            <br>
+                            <br>
+                            <!----
+                            <ul>
+
+                              {% for file in filenames %}
+                              <img  src="static/multipleuploadsjpeg/{{file}}" alt="">
+                                <li><a href="{{url_for('uploaded_file', filename=file)}}">{{file}}</a></li>
+                              {% endfor %}
+                            </ul>
+                            -->
+
+                            {% for i in range(0, len) %}
+                            
+                            <img src="static/multipleuploadsjpeg/{{filenames[i]}}" alt="">
+                            <br>
+                            <br>
+                            <p style="color: white">{{result.label[i]}}</p>
+                            <h4 class="card-title" style="color: white">{{out[i]}}</h4>
+                            <p class="card-text" style="color: white">{{description[i]}}</p>
+                            <br>
+                            {% endfor %}
+
+                            </div>
+
+
+
+                <!---
+                  <img  src="{{image}}" alt="">
+                  <br>
+                  <br>
+
+                    <h4 class="card-title">{{out}}</h4>
+                    <p class="card-text">{{description}}</p>
+                  -->
+            </div>
+        </div>
+    </div>
+  </div>
+{% endblock %}

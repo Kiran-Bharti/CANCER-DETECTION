@@ -1,0 +1,50 @@
+{%extends "themepage.html"%}
+{%block title%} MULTI UPLOAD {%endblock%} 
+
+
+{%block body%}
+<div class="bgimg-1">
+
+  <div class="caption2">
+
+  <span class="border">UPLOAD IMAGE</span>
+
+  <br>
+  <br>
+  <br>
+
+ 
+  </div>
+  <br>
+  <br>
+  {% with messages = get_flashed_messages() %}
+  {% if messages %}
+    {% for message in messages %}
+      <div class="alert alert-danger alert-dismissible" role="alert">
+    <strong>WARNING: </strong>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+        {{message}}
+      </div>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+<br>
+<br>
+<br>
+<br>
+<div class="uploader">      
+        <form method="POST" class="border" enctype="multipart/form-data">
+          <input type="file" multiple="true" autocomplete="off" name="file[]" class="span3" /><br />
+          <br>
+            <br>
+            <br>
+            <br>
+            <div class="btndark">
+                <input type="submit" value="Upload"  class="span2 btn btn-lg btndark2">
+              </div>
+         
+        </form>
+       
+      </div>
+
+{%endblock%}

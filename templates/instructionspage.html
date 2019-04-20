@@ -1,0 +1,71 @@
+{%extends "themepage.html"%}
+{%block title%} INSTRUCTIONS {%endblock%} 
+
+
+{%block body%}
+
+<br>
+<br>
+
+<div id="about" class="container-fluid ">
+    <div class="row">
+      <div class="col-sm-8" style="color:black;">
+        <h2>STEP 1:   GO TO THE DETECT PAGE</h2><br>
+        <h4>
+            1. Click on the Choose button.
+        </h4>
+        <h4>
+            2. Select the file/folder.
+        </h4>
+        <h4>
+            * The images that are being uploaded should be Histopathologic images.
+         </h4>
+        <h4>
+           * The file should be either in .jpg, .jpeg or .tif format only.
+        </h4>
+        <h4>
+           * If the file is in any other format or there is no file selected then a warning will be shown.
+        </h4>
+        <h4>
+            3. After selecting the file/folder click on the UPLOAD button.
+        </h4>
+        
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-picture logo"></span>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid bg-grey">
+    <div class="row">
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-plus-sign logo slideanim slide"></span>
+      </div>
+      <div class="col-sm-8">
+        <h2>STEP 2:   VIEW THE RESULT </h2><br>
+        <h4>
+            As soon as you have uploaded your file/folder our model will start working on it.
+        </h4>
+        <h4>
+            The detection may take some time so you might have to wait for some moments.
+        </h4>
+        <h4>
+            After the detection process is complete you can view the results.
+        </h4><br>
+        <p>
+            The results have 80% accuracy. If the result is positive for cancer then it means that there are 80 percent chances that cells have cancer. In such a case medical actions should be taken immediately.
+
+        </p>
+        <p>
+            For a negative result there are still 20 percent chances of cancer. So, in that case some more samples should be uploaded for detection. If the results remain same after 2-3 attempts, then the cells are free from cancer.
+        </p><br>
+        <br>
+        <a href="testerpage.html" class="btn btn-default btn-lg" role="button">START DETECTION</a>
+      </div>
+    </div>
+  </div>
+  
+
+{%endblock%}

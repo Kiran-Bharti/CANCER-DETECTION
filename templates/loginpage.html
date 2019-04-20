@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SIGN IN</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  body, html {
+    
+	height: 100%;
+	margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+  }
+  .bgimg-1{
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("static/images/img.jpg");
+  min-height: 100%;
+}
+  
+  
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .panel {
+    border: 2px solid transparent; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+	background-color: transparent;
+	box-shadow: 0px 0px 40px black;
+  }
+  .panel:hover {
+    box-shadow: 5px 5px 50px black;
+  }
+  .btn:hover{
+  box-shadow: 5px 5px 50px black;
+  	
+
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid black;
+    background-color: #fff !important;
+    color: black;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: transparent !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: transparent !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: black;
+    color: #fff;
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+	
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  
+  </style>
+</head>
+<body>
+
+<div class="bgimg-1">
+<!-- Container (Pricing Section) -->
+<div class="container-fluid">
+  <div class="row ">
+    <div class="col-sm-4 col-xs-12">
+    </div>
+    
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>LOGIN</h1>
+        </div>
+        <form class="panel-body" action="/loginpage.html" method="POST">
+            <label style="color: red;"><b>{{error}}</b></label>
+<br>
+		          <label for="email" style="color:white;"><b>Email</b></label>
+				  <br>
+          <input type="text" placeholder="Enter Username" name="email" style="color: white; background-color:transparent; width:100%; box-shadow: 10px 10px 40px black; border: transparent;" required>
+          <br>
+		  <br>
+		  
+		  <label for="psw" style="color:white;"><b>Password</b></label>
+		  <br>
+          <input type="password" placeholder="Enter Password" name="psw" style="color: white; background-color:transparent; width:100%; box-shadow: 10px 10px 40px black; border: transparent;" required>
+    <br>
+	<br>
+	
+            <button type="submit" class="btn btn-lg" value="signin" style="width:100%; color:white; background-color:black; border:white;">LOG IN</button>
+
+		
+    </form>
+    <div class="panel-footer">
+        <h4>Go back to  <a href="/" >Sign up</a>  page</h4>
+      </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+    </div>
+
+	</div>
+</div>
+
+</div>
+
+</body>
+</html>

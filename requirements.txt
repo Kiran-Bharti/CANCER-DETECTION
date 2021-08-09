@@ -91,7 +91,7 @@ python-dateutil==2.7.3
 python-git==2018.2.1
 pytz==2018.9
 PyWavelets==1.0.1
-pywin32==223
+pywin32==301
 pywin32-ctypes==0.2.0
 pywinpty==0.5.4
 PyYAML==3.13
